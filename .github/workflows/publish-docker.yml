@@ -44,5 +44,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/bacon-factory/${{ github.event.repository.name }}:latest,ghcr.io/bacon-factory/${{ github.event.repository.name }}:4.0.1,ghcr.io/bacon-factory/${{ github.event.repository.name }}:v4.0.1
+          tags: ghcr.io/bacon-factory/${{ env.IMAGE_NAME }}:latest,ghcr.io/bacon-factory/${{ env.IMAGE_NAME }}:4.0.1,ghcr.io/bacon-factory/${{ env.IMAGE_NAME }}:v4.0.1
           labels: ${{ steps.meta.outputs.labels }}
